@@ -1,0 +1,15 @@
+name: 'Print links in matched files'
+description: 'Prints all links in matched files'
+inputs:
+  dir-path:
+    description: 'A path from the root to the dir where to look for files'
+    required: true
+  file-ext:
+    description: 'The file extension to filter by'
+    required: true
+outputs:
+  total-number:
+    description: 'The total number of all links in all the matched files'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

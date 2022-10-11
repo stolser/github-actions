@@ -1,0 +1,33 @@
+bin/
+.idea
+*.iml
+
+.terraform
+.terragrunt-cache
+*tfstate*
+crash.log
+*.key
+*.orig
+*.pem
+*.zip
+.vagrant
+.layers
+non-prod/eu-west-1/shared/ecr/ecr.tf
+*.pyc
+.DS_Store
+.terraform.lock.hcl
+
+# These secrets are encrypted using git-crypt
+!files/secrets/*/*
+
+!modules/**/*.zip
+
+# All modules should be outside of tf-infra repository
+modules
+
+# Generator
+.yo-rc.json
+node_modules/
+coverage/
+build/manifests
+
